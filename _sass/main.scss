@@ -1,0 +1,199 @@
+$backgroundColor: #1B1B1B;
+$bodyColor: #f6f6f6;
+$linkColor: rgb(255, 172, 108);
+$visitedColor: rgb(156, 114, 255);
+$transparentBlack: hsla(0, 0%, 0%, 0.8);
+$transparentGreen: rgba(161, 255, 225, 0.8);
+$titleColor: rgb(255, 172, 108);
+$highlightColor: AliceBlue;
+
+@font-face {
+  font-family: "urw_gothic_lbook";
+  src: url("/assets/fonts/urw-gothic-l-book-webfont.woff2") format("woff2"),
+    url("/assets/fonts/urw-gothic-l-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  line-height: 1.35;
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: "urw_gothic_lbook", "Didact Gothic", sans-serif;
+  background-image: url("/assets/img/leonine_bg.webp");
+  background-repeat: repeat-y;
+  background-position: 5% 0%;
+}
+
+h1 {
+  background: $transparentBlack;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.flexbox-h-container {
+  padding: 0em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  margin-left: auto;
+}
+
+.right {
+  margin-right: auto;
+}
+
+.center {
+  margin-left: 0 auto;
+}
+
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 40%;
+}
+.w78c {
+  width: 78ch;
+}
+
+.flexbox-v-container {
+  padding: 1%;
+  background: $backgroundColor;
+}
+
+.flexbox-v-centered {
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  background: $backgroundColor;
+}
+
+nav {
+  text-align: center;
+}
+
+nav > ul {
+  display: inline-block;
+  list-style-type: none;
+  background: $transparentBlack;
+}
+
+nav li {
+  padding: 1em;
+  float: left;
+}
+
+.nav-current {
+  color: $visitedColor;
+}
+
+.desc {
+  min-width: 350px;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: none;
+  transition: 250ms linear 0s;
+  outline: 0 none;
+  color: $linkColor;
+  text-shadow: 1px 1px 2px rgb(255, 217, 192);
+}
+a:hover {
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+.bigger {
+  font-size: 1.2em;
+}
+.highlight {
+  color: $highlightColor;
+}
+body {
+  counter-reset: h2counter;
+}
+h1 {
+  counter-reset: h2counter;
+}
+h2 {
+  color: $titleColor;
+}
+h3 {
+  color: $titleColor;
+}
+h2.numbered:before {
+  content: counter(h2counter) ".\0000a0\0000a0";
+  counter-increment: h2counter;
+  counter-reset: h3counter;
+}
+h3.numbered:before {
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+
+.dynamic-iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.dynamic-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-gallery {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  justify-content: center;
+  padding: 4px;
+}
+
+.box {
+    flex-basis: 25%;
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+}
+
+.hoverfull:hover {
+  // width: 512px;
+  position:absolute;
+  width:auto;
+  height:auto;
+}
+
+.img-gallery {
+width: 100%;
+height: 200px;
+object-fit: cover;
+transform: scale(1);
+transition: all 0.3s ease-in-out;
+}
+.img-gallery:hover {
+  transform: scale(1.05);
+}

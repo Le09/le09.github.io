@@ -1,0 +1,18 @@
+---
+layout: centered
+title: Blog
+---
+
+<h1>Weblog Posts</h1>
+
+<ul>
+  {% for post in site.posts%}
+  <li>
+    <h2>
+      <a href="{{ post.url }}"
+        >{{ post.date | date: "%-d %B %Y"}}: <q>{{ post.title }}</q></a>
+    </h2>
+    <p>{{ post.excerpt }}</p>
+  </li>
+  {% endfor %}
+</ul>
