@@ -180,8 +180,24 @@ h3.numbered:before {
     margin: 2px;
 }
 
+.dblock {
+    display: block;
+}
+
+.wob {
+    width: 128px;
+}
+
+.wobbig {
+    width: 256px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hoverfull:hover {
-  // width: 512px;
   position:absolute;
   width:auto;
   height:auto;
