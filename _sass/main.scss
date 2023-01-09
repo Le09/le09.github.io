@@ -154,6 +154,10 @@ h3.numbered:before {
   counter-increment: h3counter;
 }
 
+blockquote {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .dynamic-iframe-container {
   position: relative;
   width: 100%;
