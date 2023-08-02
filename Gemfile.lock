@@ -87,6 +87,8 @@ DEPENDENCIES
   jekyll-latex
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown
+  rouge
   webrick
 
 BUNDLED WITH

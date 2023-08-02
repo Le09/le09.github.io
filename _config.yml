@@ -9,6 +9,10 @@ collections:
   members:
     output: true
 
+markdown: kramdown
+highlighter: rouge
+input: GFM
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
