@@ -236,3 +236,11 @@ transition: all 0.3s ease-in-out;
 .img-gallery:hover {
   transform: scale(1.05);
 }
+
+.caption { 
+  width: 80%; 
+  margin: 0 auto; 
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+}
