@@ -151,10 +151,10 @@ a {
   transition: 250ms linear 0s;
   outline: 0 none;
   color: $linkColor;
-  text-shadow: 1px 1px 2px rgb(255, 217, 192);
+  text-shadow: 1px 1px 2px rgb(4, 0, 255);
 }
 a:hover {
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  text-shadow: -1px 1px 8px rgb(140, 0, 255), 1px -1px 8px #fff;
 }
 .bigger {
   font-size: 1.2em;
