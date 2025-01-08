@@ -37,8 +37,8 @@ We'll see why with concrete examples, so let's explore them in detail.
 ## framework and distribution constraints
 
 There are essentially two requirements, that appear very basic:
-1) make HTTPS requests
-2) be able to store files on disk
+1. make HTTPS requests
+2. be able to store files on disk
 
 The second one could be alleviated by saving files to another system that can be accessed via a simple url, at the price of higher infrastructure complexity and higher monetary cost.
 
