@@ -5,7 +5,8 @@ image: /assets/img/ai/swan.webp
 
 _These problems are impossible to ignore_
 
-<img src="/assets/img/ai/swan.webp" alt="AI swans look like they glide efforlessly, yet..." class="w30"/>                                       
+<img src="/assets/img/ai/swan.webp" alt="A robot swan on a lake" class="w30"/>
+<div class="caption_left">AI swans look like they glide efforlessly, yet...</div>
 
 With modern development tools, one can quickly create the functional MVP of an application.
 Aren't AI-enhanced ideas the perfect candidates for such experiments?
@@ -61,7 +62,8 @@ The space requirement, and in most cases the compute requirement, make it prohib
 
 Because of this, the application has to consider authentication to make calls through an intermediary server.
 
-<img src="/assets/img/jobifai/screenshot_explain.webp" alt="Relying on AI to do your job is risky." class="w80"/>
+<img src="/assets/img/jobifai/screenshot_explain.webp" alt="A screenshot of JOBifAI" class="w80"/>
+<div class="caption_left">Relying on AI to do your job is risky.</div>
 
 ## privacy and safety concerns
 
