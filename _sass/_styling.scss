@@ -208,6 +208,41 @@ blockquote {
   grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
   justify-content: center;
   padding: 4px;
+  img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+  img:hover {
+    transform: scale(2.5);
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.image-gallery-uniform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 4px;
+  img {
+    height: 40vh;
+    width: auto;
+    object-fit: contain;
+  }
+  img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+  img:hover {
+    transform: scale(2.5);
+    z-index: 10;
+    position: relative;
+  }
+  &.half img {
+    height: 25vh;
+  }
 }
 
 .box {
@@ -247,6 +282,8 @@ blockquote {
     width:auto;
     max-width:80%;
     height:auto;
+    z-index: 10;
+    background: $backgroundColor;
 }
 
 .hoverfull:hover {
