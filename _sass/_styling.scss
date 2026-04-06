@@ -259,6 +259,16 @@ blockquote {
     margin: 2px;
 }
 
+.hoverscale {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(2.5);
+    z-index: 10;
+    position: relative;
+  }
+}
+
 .dblock {
     display: block;
 }
