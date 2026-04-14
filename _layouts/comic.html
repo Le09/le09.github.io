@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="comic-reader">
+  <h1>{{ page.title }}</h1>
+
+  <div class="comic-nav-top">
+    {% if page.prev_page %}<a href="{{ page.prev_page }}" class="comic-arrow comic-prev" title="Previous page">&larr;</a>{% endif %}
+    <span class="comic-page-num">Page {{ page.page_num }} / {{ site.data.leonine_pages.size | minus: 1 }}</span>
+    {% if page.next_page %}<a href="{{ page.next_page }}" class="comic-arrow comic-next" title="Next page">&rarr;</a>{% endif %}
+  </div>
+
+  <div class="comic-image">
+    <img src="/assets/img/leonine/{{ page.image }}" alt="{{ page.title }}" loading="lazy"/>
+  </div>
+
+  {% assign page_key = page.image_key %}
+  {% if site.data.leonine[page_key] %}
+  <div class="comic-description">
+    {{ site.data.leonine[page_key].description | markdownify }}
+  </div>
+  {% endif %}
+
+  {% if content != "" %}
+  <div class="comic-description">
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <div class="comic-nav-bottom">
+    {% if page.prev_page %}<a href="{{ page.prev_page }}" class="comic-arrow comic-prev">&larr; Previous</a>{% endif %}
+    {% if page.next_page %}<a href="{{ page.next_page }}" class="comic-arrow comic-next">Next &rarr;</a>{% endif %}
+  </div>
+
+  <div class="comic-page-list">
+    <h3>All pages</h3>
+    <ul>
+      {% for entry in site.data.leonine_pages %}
+      <li>
+        {% if entry.url == page.url %}<strong>{{ entry.label }}</strong>
+        {% else %}<a href="{{ entry.url }}">{{ entry.label }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowLeft' || e.key === 'a') {
+    var prev = document.querySelector('.comic-prev');
+    if (prev) prev.click();
+  } else if (e.key === 'ArrowRight' || e.key === 'd') {
+    var next = document.querySelector('.comic-next');
+    if (next) next.click();
+  }
+});
+</script>
+<div class="flexbox-v-centered w78c">
+<script defer src="https://comments.woolion.art/comentario.js"></script>
+  <comentario-comments
+    theme="dark"
+    page-title="{{ page.title }}"
+  ></comentario-comments>
+</div>

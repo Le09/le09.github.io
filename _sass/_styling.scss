@@ -337,3 +337,57 @@ transition: all 0.3s ease-in-out;
   75%  { transform: rotate(360deg); }
   100% { transform: rotate(360deg); }
 }
+
+.comic-reader {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+  background: $backgroundColor;
+}
+
+.comic-nav-top, .comic-nav-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0.5em 0;
+}
+
+.comic-arrow {
+  font-size: 1.5em;
+  padding: 0.2em 0.5em;
+}
+
+.comic-page-num {
+  color: $bodyColor;
+  opacity: 0.7;
+}
+
+.comic-image {
+  text-align: center;
+  padding: 0.5em 0;
+  img {
+    max-height: 85vh;
+    width: auto;
+  }
+}
+
+.comic-description {
+  padding: 1em 0;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.comic-page-list {
+  padding: 1em 0;
+  text-align: center;
+  h3 { margin-bottom: 0.5em; }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+  }
+}

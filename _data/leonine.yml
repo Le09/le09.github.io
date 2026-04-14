@@ -1,0 +1,7 @@
+# Comic page descriptions — keyed by image filename (without extension).
+# Add a description or notes for any page; leave absent for no text.
+#
+# Example:
+#   0_titlesm:
+#     title: "Cover"
+#     description: "The cover page of Leonine."
