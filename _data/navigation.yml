@@ -2,6 +2,8 @@
   link: /
 - name: Blog
   link: /blog.html
+- name: Video Games
+  link: /videogames.html
 - name: Wobblepaint
   link: /wobblepaint.html
 - name: MyFamicase
