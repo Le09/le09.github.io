@@ -2,6 +2,8 @@
   link: /
 - name: Blog
   link: /blog.html
+- name: Trails
+  link: /trails.html
 - name: Video Games
   link: /videogames.html
 - name: Wobblepaint

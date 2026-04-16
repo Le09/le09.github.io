@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="flexbox-h-container">
+  <div class="flexbox-v-centered w78c">
+    <div>
+      <h1>{{ page.title }}</h1>
+    </div>
+    {{ content }}
+    <footer class="entry-dates">
+      {% if page.first_posted %}
+      <p>first posted on {{ page.first_posted | date: "%-d %B %Y" }}</p>
+      {% endif %}
+      {% for edit in page.edits %}
+      <p>edited on {{ edit.date | date: "%-d %B %Y" }} {{ edit.reason }}</p>
+      {% endfor %}
+    </footer>
+    <script defer src="https://comments.woolion.art/comentario.js"></script>
+    <comentario-comments
+      theme="dark"
+      page-title="{{ page.title }}"
+    ></comentario-comments>
+  </div>
+</div>

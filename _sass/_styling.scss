@@ -188,6 +188,18 @@ blockquote {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.entry-dates {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(246, 246, 246, 0.72);
+  font-size: 0.9em;
+  margin-top: 2em;
+  padding-top: 0.5em;
+}
+
+.entry-dates p {
+  margin: 0.25em 0;
+}
+
 .dynamic-iframe-container {
   position: relative;
   width: 100%;

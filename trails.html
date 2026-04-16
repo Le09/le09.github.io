@@ -1,0 +1,26 @@
+---
+layout: centered
+title: Trails
+description: "Personal notes and histories about drawing, technology, and the creative process."
+---
+
+<h1>Trails</h1>
+
+These entries are more about personal thoughts and experiences; they document the internal journey, focusing on the why and how of creation rather than the output.
+As such, contrarily to my 'blog' entries, these posts do not make any claim about novelty.
+It's still mostly about nerdy stuff though.
+
+{% assign entries = site.trails | sort: "order" | reverse %}
+<ul>
+  {% for entry in entries %}
+  <li>
+    <h2>
+      <a href="{{ entry.url }}"><q>{{ entry.title }}</q></a>
+    </h2>
+    {% assign excerpt = entry.excerpt | strip %}
+    {% if excerpt != "" %}
+    {{ excerpt }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

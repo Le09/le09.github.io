@@ -6,8 +6,9 @@ imagesurl: "/assets/img/"
 thumbsurl: "/assets/img/thumbs/"
 
 collections:
-  members:
+  trails:
     output: true
+    permalink: /trails/:name.html
 
 markdown: kramdown
 highlighter: rouge
@@ -24,6 +25,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "trails"
+    values:
+      layout: "trails"
   - scope:
       path: ""
     values:
