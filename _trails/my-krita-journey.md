@@ -32,11 +32,11 @@ The reason I kept going with it is that I saw the price of traditional paint and
 
 During my time in art school, the profs saw my piles of drawings on printer paper, and scoffed and mocked me.
 "You can't draw on anything but high-grade drawing paper" they said, with one sheet costing as much as 100 sheets of printer paper.
-Of course, I did not change my ways, I was only more antagonistic.
+Of course, I did not change my ways, I was only more antagonistic; even at the time, I could tell the people who were aggressive on that front had extremely limited technical ability.
+
 Digital painting was not an option; it was a necessary technological escape from traditional stupidity.
-I kept it a secret, as drawing on cheap paper was a sin I could take on, but digital painting was simply unthinkable.
-Most of the people who were aggressive on that front had extremely limited technical ability.
-The message was the same: the right materials mattered more than the work happening in front of you; I always felt there was something very wrong with that.
+Yet, I kept it a secret, as drawing on cheap paper was a sin I could take on, but digital painting was simply unthinkable.
+Still, the message was the same: the right materials mattered more than the work happening in front of you; I always felt there was something very wrong with that.
 
 ## Technological Shift: the mypaint gateway to fun
 
