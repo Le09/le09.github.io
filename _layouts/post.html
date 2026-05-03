@@ -9,11 +9,7 @@ layout: default
       <h3>{{ page.date | date: "%-d %B %Y"}}</h3>
     </div>
     {{ content }}
-    <script defer src="https://comments.woolion.art/comentario.js"></script>
-    <comentario-comments
-      theme="dark"
-      page-title="{{ page.title }}"
-    ></comentario-comments>
+    {% include comments.html %}
     </div>
   </div>
 </div>

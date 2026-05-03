@@ -1,0 +1,13 @@
+{% if jekyll.environment == "production" %}
+<script defer src="https://comments.woolion.art/comentario.js"></script>
+<comentario-comments
+  theme="dark"
+  page-title="{{ page.title }}"
+></comentario-comments>
+{% else %}
+<div class="comments-placeholder" style="background: red;">
+  Comments are enabled in production.
+  Set <code>JEKYLL_ENV=production</code> to enable comments.
+  The Comentario instance is not configured to allow localhost; if that happens, intialization crashes and it auto-scrolls to its div. Because of images lazy-loading, it does not know how far it should go, so the scroll might appear random.
+</div>
+{% endif %}

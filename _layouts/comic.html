@@ -59,9 +59,5 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 <div class="flexbox-v-centered w78c">
-<script defer src="https://comments.woolion.art/comentario.js"></script>
-  <comentario-comments
-    theme="dark"
-    page-title="{{ page.title }}"
-  ></comentario-comments>
+  {% include comments.html %}
 </div>
