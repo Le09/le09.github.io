@@ -1,6 +1,11 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://woolion.art"
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Leonine" # the name of your site, e.g. ACME Corp.
+description: "Woolion's home for drawings, game experiments, AI art notes, music-adjacent work, comics, and personal technical trails."
+author:
+  name: "Woolion"
+lang: "en-US"
+timezone: "Europe/Brussels"
 
 imagesurl: "/assets/img/"
 thumbsurl: "/assets/img/thumbs/"
@@ -18,6 +23,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+exclude:
+  - tmp/
+  - vendor/
+  - _site/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .bundle/
+  - Gemfile.lock
 
 defaults:
   - scope:
