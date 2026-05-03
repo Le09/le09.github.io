@@ -145,6 +145,104 @@ nav li {
   min-width: 350px;
 }
 
+.home-page {
+  max-width: 1120px;
+  margin: 0 auto 4em;
+  padding: 0 1em 2em;
+}
+
+.home-hero,
+.home-section {
+  background: $transparentBlack;
+}
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.home-hero img {
+  width: 112px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.home-hero h1 {
+  margin: 0 0 0.25em;
+  background: none;
+}
+
+.home-hero p {
+  max-width: 72ch;
+  margin: 0;
+}
+
+.home-section {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.home-section h2 {
+  margin-top: 0;
+}
+
+.home-sitemap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1em 1.5em;
+}
+
+.home-sitemap article {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: 0.65em;
+}
+
+.home-sitemap h3,
+.home-sitemap p {
+  margin: 0;
+}
+
+.home-sitemap p {
+  margin-top: 0.35em;
+}
+
+.home-link-list,
+.home-archive,
+.home-socials {
+  padding-left: 1.25em;
+}
+
+.home-archive li {
+  margin: 0.35em 0;
+}
+
+.home-archive time {
+  display: inline-block;
+  min-width: 7em;
+  color: rgba(246, 246, 246, 0.72);
+}
+
+.home-socials {
+  columns: 2;
+}
+
+@media (max-width: 640px) {
+  .home-hero {
+    align-items: flex-start;
+  }
+
+  .home-hero img {
+    width: 72px;
+  }
+
+  .home-socials {
+    columns: 1;
+  }
+}
+
 a {
   text-decoration: none;
   text-shadow: none;
