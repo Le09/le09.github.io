@@ -501,3 +501,9 @@ transition: all 0.3s ease-in-out;
     gap: 0.5em 1em;
   }
 }
+
+/* Markdown marker: `---` followed by `{: .aside}` on the next line
+   grays out everything after it, footnotes excluded */
+hr.aside ~ :is(p, ul, ol, blockquote, h2, h3, h4, table) {
+  color: rgba(246, 246, 246, 0.55);
+}
